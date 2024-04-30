@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8FF; /* Background color adjusted */
+}
+
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #001a9a;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.input-container {
+    margin-bottom: 1rem;
+}
+
+#city-input {
+    width: 150%; /* Adjusted width */
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1rem;
+    border: 1px solid rgb(0, 20, 136);
+    border-radius: 4px;
+    outline: none;
+}
+
+
+
+button {
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
+    margin-top: 1rem;
+    background-color: #1f1302;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e22d0cad;
+}
+
+#weather-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.weather-data-item {
+    margin-bottom: 0.5rem;
+}
+
+.weather-data-item h2 {
+    font-size: 1.5rem;
+    color: #3f3f3f;
+    margin-bottom: 0.2rem;
+}
+
+.weather-data-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.card {
+    background-color: rgb(0, 121, 196); /* Change background color to light yellow */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    padding: 10px; /* Add padding for better spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.card-body {
+    font-size: 18px;
+    color: #fdfdfd;
+}
+.input-container {
+    margin-top: 20px; /* Add margin to the top of the input container */
+    margin-bottom: 2rem; /* Increased margin-bottom for spacing */
+}
+
+#locationInput {
+    width: 300px; /* Increased width of the input field */
+    height: 40px;
+    padding: 0 10px;
+    font-size: 1rem;
+    border: 1px solid rgb(0, 20, 136);
+    border-radius: 4px;
+    outline: none;
+}
+.full-width-image {
+    width: 100%; /* Make the image span across the entire width */
+    height: 450px; /* Set the height to your desired value */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+}
+.card-container {
+    display: flex;
+    gap: 20px; /* Space between cards */
+}
+
+
