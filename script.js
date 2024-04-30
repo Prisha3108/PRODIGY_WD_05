@@ -1,6 +1,8 @@
+require('dotenv').config(); // Load environment variables from .env file
+
 function getWeather() {
     var locationInput = document.getElementById('locationInput').value;
-    var apiKey = '56c9de57e28660004230b4f2756a84c9'; // Replace 'YOUR_API_KEY' with your actual API key
+    var apiKey = process.env.API_KEY; // Use API key from environment variable
     var url = `https://api.openweathermap.org/data/2.5/weather?q=${locationInput}&appid=${apiKey}&units=metric`;
 
     fetch(url)
